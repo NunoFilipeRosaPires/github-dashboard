@@ -1,0 +1,39 @@
+@use "../../variables/breakpoints" as *;
+
+.container {
+  max-width: 30em;
+  padding-inline: 1rem;
+  margin-inline: auto;
+
+  &-fluid {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .container {
+    padding-inline: 1.5rem;
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .container {
+    padding-inline: 2rem;
+    max-width: 50rem;
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .container {
+    padding-inline: 2.5rem;
+    max-width: 60rem;
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .container {
+    padding-inline: 3rem;
+    max-width: 70rem;
+  }
+}

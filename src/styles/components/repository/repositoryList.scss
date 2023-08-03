@@ -1,0 +1,51 @@
+@use "../../variables/breakpoints" as *;
+@use "../../variables/colors" as *;
+
+.repository-list {
+  margin-top: 4rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .card:nth-child(1) {
+      .repository-orientation-vertical {
+        border-color: $color-blue;
+      }
+    }
+    .card:nth-child(2) {
+      .repository-orientation-vertical {
+        border-color: $color-blue-lighter-1;
+      }
+    }
+    .card:nth-child(3) {
+      .repository-orientation-vertical {
+        border-color: $color-blue-lighter-2;
+      }
+    }
+    .card:nth-child(4) {
+      .repository-orientation-vertical {
+        border-color: $color-blue-lighter-3;
+      }
+    }
+  }
+
+  &__item {
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .repository-list {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

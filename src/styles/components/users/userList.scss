@@ -1,0 +1,20 @@
+@use "../../variables/breakpoints" as *;
+
+.user-list {
+  margin-top: 4rem;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .user-list {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

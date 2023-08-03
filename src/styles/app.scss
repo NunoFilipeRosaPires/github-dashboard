@@ -1,8 +1,33 @@
+@use "./variables/colors" as *;
+
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
 }
 
-button {
+button,
+a {
   all: unset;
   cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h2 {
+  color: rgba($color-charcoal, 85%);
+}
+
+.app {
+  margin-bottom: 4rem;
 }

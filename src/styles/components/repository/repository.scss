@@ -1,0 +1,99 @@
+@use "../../variables/colors" as *;
+
+.repository {
+  position: relative;
+  width: calc(100% - 2rem);
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  &.repository-border {
+    width: calc(100% - 2rem - 2px);
+  }
+  &.repository-orientation-horizontal {
+    width: calc(100% - 2rem - 6px);
+  }
+  &.repository-border.repository-orientation-horizontal {
+    width: calc(100% - 2rem - 7px);
+  }
+
+  &-border {
+    border: 1px solid $color-blue;
+  }
+
+  &-orientation {
+    &-vertical {
+      margin-bottom: 1rem;
+      border-top: 6px solid $color-blue;
+
+      .repository {
+        &__top {
+          margin-top: 2rem;
+          flex-direction: column;
+        }
+
+        &__title {
+          font-weight: 600;
+          color: $color-charcoal;
+        }
+
+        &__description {
+          -webkit-line-clamp: 4;
+          text-align: center;
+          min-height: 4rem;
+        }
+      }
+    }
+    &-horizontal {
+      border-left: 6px solid $color-blue;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  &__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
+    color: $color-blue;
+    font-weight: 500;
+    & > div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    gap: 0.25rem;
+    color: $color-blue;
+
+    svg {
+      padding: 0.25rem;
+      background-color: $color-blue;
+      border-radius: 50%;
+    }
+  }
+
+  &__description {
+    display: -webkit-box;
+    min-height: 1rem;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    color: $color-charcoal;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

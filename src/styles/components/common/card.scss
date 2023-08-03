@@ -1,0 +1,13 @@
+@use "../../variables/colors" as *;
+
+.card {
+  position: relative;
+  width: 100%;
+  background-color: $color-white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &--shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 4px;
+  }
+}

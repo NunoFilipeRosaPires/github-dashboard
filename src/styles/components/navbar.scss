@@ -1,0 +1,19 @@
+@use "../variables/colors" as *;
+
+.navbar {
+  width: 100%;
+  padding-block: 0.75rem;
+  background-color: $color-charcoal;
+
+  &__logo {
+    flex: 1;
+    img {
+      width: 128px;
+    }
+  }
+  &__search {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+  }
+}
