@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Github Dashboard
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed as part of a challenge requested by UpHill.
 
 ## Config the project after start
 
@@ -13,9 +14,9 @@ After creating the token, open the `.env` file that is in the root of the projec
 
 ### `npm install`
 
-Before start the project, install all the required dependencies.\
+Before start the project, install all the required dependencies.
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
