@@ -1,7 +1,6 @@
 # Github Dashboard
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app).
-This project was developed as part of a challenge requested by UpHill.
+This project was created with [Create React App](https://github.com/facebook/create-react-app) and was developed as part of a challenge requested by UpHill.
 
 ## Config the project after start
 
