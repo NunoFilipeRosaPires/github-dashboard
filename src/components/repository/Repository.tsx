@@ -12,9 +12,7 @@ export const Repository = ({ repository, withBorder = false, orientation, withSh
         }`}
       >
         <div className="repository__top">
-          <div className="repository__title">
-            <div>{repository?.name}</div>
-          </div>
+          <div className="repository__title">{repository?.name}</div>
           <div className="repository__stars">
             <FontAwesomeIcon icon={faStar} size="2xs" color="#fff" />
             {repository?.stargazers_count}

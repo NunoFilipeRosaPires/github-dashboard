@@ -9,22 +9,22 @@
     flex-direction: column;
     gap: 2rem;
 
-    .card:nth-child(1) {
+    .repository-list__item:nth-child(1) {
       .repository-orientation-vertical {
         border-color: $color-blue;
       }
     }
-    .card:nth-child(2) {
+    .repository-list__item:nth-child(2) {
       .repository-orientation-vertical {
         border-color: $color-blue-lighter-1;
       }
     }
-    .card:nth-child(3) {
+    .repository-list__item:nth-child(3) {
       .repository-orientation-vertical {
         border-color: $color-blue-lighter-2;
       }
     }
-    .card:nth-child(4) {
+    .repository-list__item:nth-child(4) {
       .repository-orientation-vertical {
         border-color: $color-blue-lighter-3;
       }
