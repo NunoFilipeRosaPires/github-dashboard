@@ -18,30 +18,27 @@ export const useFetch = (params: IFetch) => {
   useEffect(() => {
     setIsLoading(true);
     const abortController = new AbortController();
-    const a = () => {
-      octokit
-        .request(params.url, {
-          request: {
-            signal: abortController.signal,
-          },
-          ...params.options,
-          headers: {
-            "X-GitHub-Api-Version": "2022-11-28",
-          },
-        })
-        .then((data) => {
-          setIsLoading(false);
-          setData(data.data);
-          setError(null);
-        })
-        .catch((err) => {
-          if (err.name === "AbortError") return;
-          setIsLoading(false);
-          setError(err);
-        });
-    };
 
-    a();
+    octokit
+      .request(params.url, {
+        request: {
+          signal: abortController.signal,
+        },
+        ...params.options,
+        headers: {
+          "X-GitHub-Api-Version": "2022-11-28",
+        },
+      })
+      .then((data) => {
+        setIsLoading(false);
+        setData(data.data);
+        setError(null);
+      })
+      .catch((err) => {
+        if (err.name === "AbortError") return;
+        setIsLoading(false);
+        setError(err);
+      });
 
     return () => {
       abortController.abort();
