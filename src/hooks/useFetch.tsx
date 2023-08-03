@@ -46,6 +46,7 @@ export const useFetch = (params: IFetch) => {
     return () => {
       abortController.abort();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params.url, (params.options as any).q]);
 
   return { data, isLoading, error };
